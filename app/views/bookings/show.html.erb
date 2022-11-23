@@ -1,1 +1,12 @@
-<h2>colocar html show</h2>
+<h2>My Bookings</h2>
+<div class="card-pet">
+  <img src="<%= cl_image_path @pet.photo.key, height: 300, crop: :fill %>" />
+  <div class="card-trip-infos">
+    <div>
+      <h2>Pet name</h2>
+      <p>Short description here!</p>
+    </div>
+    <h2 class="card-pet-pricing">£99.99</h2>
+    <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+  </div>
+</div>
