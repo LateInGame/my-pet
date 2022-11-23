@@ -2,6 +2,7 @@ class BookingsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index]
 
   def new
+    @pet = Pet.find(params[:pet_id])
     @booking = Booking.new
     authorize @booking
   end
